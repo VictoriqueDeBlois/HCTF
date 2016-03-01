@@ -8,6 +8,7 @@
 
 * chrome -> f12
 * Ctrl + f 搜索hctf 得到flag<br>
+![](https://raw.githubusercontent.com/VictoriqueDeBlois/HCTF/master/Image/WEB.0.0.jpg)
 
 ###WEB从0开始之0.2
 >题目ID： 35<br>
@@ -19,6 +20,7 @@
 * 将值false改为true<br>
 * 刷新网页<br>
 * 得到flag<br>
+![](https://raw.githubusercontent.com/VictoriqueDeBlois/HCTF/master/Image/WEB.0.0.2.jpg)
 
 ##MISC
 ###MISC从0开始之流量分析0
@@ -26,9 +28,9 @@
 题目描述： http://ctf.lazysheep.cc:8080/net0.pcap<br>
 Hint: PS: FLAG打错了。。格式变成flag{}..懒得改了<br>
 
-* 打开wireshake find packet里
-* 选string 搜索flag search in packet details
-* 找了下找到flag
+* 打开wireshake
+* 搜索flag
+![](https://raw.githubusercontent.com/VictoriqueDeBlois/HCTF/master/Image/MISC.0.0.jpg)
 
 ###MISC从0开始之Steganography0
 >题目ID： 32<br>
@@ -37,6 +39,7 @@ http://ctf.lazysheep.cc:8080/steg0.html<br>
 
 * 保存图片<br>
 * 用笔记本打开最下面(居然和信安导论讲的一样)<br>
+![](https://raw.githubusercontent.com/VictoriqueDeBlois/HCTF/master/Image/misc_Steganography0.jpg)
 
 ###MISC从0开始之编码0
 >题目ID： 25<br>
@@ -90,4 +93,5 @@ int main()
     printf("%s" , phead) ;
     return 0;
 }
-
+```
+![](https://raw.githubusercontent.com/VictoriqueDeBlois/HCTF/master/Image/0.0.jpg)
