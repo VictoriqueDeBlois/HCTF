@@ -26,7 +26,9 @@
 题目描述： http://ctf.lazysheep.cc:8080/net0.pcap<br>
 Hint: PS: FLAG打错了。。格式变成flag{}..懒得改了<br>
 
-* 
+* 打开wireshake find packet里
+* 选string 搜索flag search in packet details
+* 找了下找到flag
 
 ###MISC从0开始之Steganography0
 >题目ID： 32<br>
@@ -49,7 +51,8 @@ Hint: base系列编码<br>
 题目描述： ojam{AopzpzJhlzhyWhzzdvyk}<br>
 Hint: Caesar's code<br>
 
-* 自己写了个C
+* 凯撒密码需要移位，根据flag格式，ojam -> hctf 所以移位为7
+* 于是自己写了个C，运行得到flag
 ~~~c
 #include <stdio.h>
 #include <ctype.h>
