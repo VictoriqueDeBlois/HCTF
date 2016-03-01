@@ -323,6 +323,22 @@ int main( int argc , char *argv[ ] )
 
 ##WEB
 ###WEB从0开始之PHP代码审计0
+```php
+<?php
+require "flag.php";
+if (isset($_GET['name']) and isset($_GET['password'])) {
+    if ($_GET['name'] == $_GET['password'])
+        print 'No,No,No!';
+    else if (sha1($_GET['name']) === sha1($_GET['password']))
+        die('Flag: '.$flag1);
+    else
+        print 'Invalid password';
+}
+else{
+    show_source(__FILE__); 
+}
+?>
+```
 这道题，我们首先要确保name和password的值不能相同，<br>
 其次，sha1加密之后的name和password的值又必须完全相同 我们知道，<br>
 这时的a[0] = 1;所以name[] = 1和password[]= 2相比较，可以跳过第一个判断，<br>
